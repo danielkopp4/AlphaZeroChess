@@ -1,0 +1,3 @@
+# Chess Game Implementation
+
+This is essentially a wrapper for the `python-chess` module. Most of the implementation is straight forward but most of the work went into `ChessAction` and `ChessState` as you have to parse from nn output to chess python input and vice versa. One difference from the AlphaZero paper is that the state Tensor does not contain the previous 8 states but only the current state. This means that the model will be completely unaware of a threefold repetition. This was an intentional decision as it reduces the computation strain on the system. The original paper used 5,000 high spec TPU's whereas I can only run this on my one GPU.

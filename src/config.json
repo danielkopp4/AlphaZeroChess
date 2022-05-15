@@ -1,0 +1,20 @@
+{
+    "load_prev": false,
+    "episodes": 100,
+    "log_level": "INFO",
+    "exploration_coefficient": 1,
+    "side_advantage": true,
+    "tau_threshold": 30,
+    "max_data_points": 100000,
+    "train_percent": 0.9,
+    "competition_amount": 4,
+    "model_learning_rate": 0.2,
+    "model_verbosity": 1,
+    "model_epochs": 10,
+    "model_batch_size": 32,
+    "save_path": "chess_files",
+    "self_play_iters": 10,
+    "l2_regularization": 0.01,
+    "simulations": 25,
+    "tf_log_level": "3"
+}
